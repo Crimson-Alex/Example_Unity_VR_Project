@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\RotateAroundObject.cs" />
+     <Compile Include="Assets\CollisionColorSwitch.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -678,6 +679,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{39d35663-8abd-4a3e-17d3-bbf39bd785f8}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{b1299348-56a8-b9c3-60b9-26e8f5d5f7bb}</Project>
       <Name>SteamVR_Input_Editor</Name>
@@ -693,10 +698,6 @@
     <ProjectReference Include="SteamVR_Editor.csproj">
       <Project>{90d3edd5-0123-4eca-f6ca-0e4d93a77cda}</Project>
       <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{39d35663-8abd-4a3e-17d3-bbf39bd785f8}</Project>
-      <Name>SteamVR_Actions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
